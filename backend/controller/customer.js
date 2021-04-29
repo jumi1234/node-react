@@ -37,10 +37,6 @@ exports.findAll = (req, res) => {
     else res.send(data);
   });
 };
-// Find a single Customer with a customerId
-exports.findOne = (req, res) => {
-
-};
 
 // Update a Customer identified by the customerId in the request
 exports.findOne = (req, res) => {
