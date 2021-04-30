@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS `products` (
+  `productId` int(100) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `detailImage` varchar(255),
+  `price` int(20) NOT NULL,
+  `sold` int(10),
+  `view` int(15),
+  PRIMARY KEY(`productId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `products` VALUES (1234123, '밀리', '자동 급식기', 'image 주소', 'image detail 주소', 99000, 0, 0);
