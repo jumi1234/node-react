@@ -66,11 +66,11 @@ function NavBar() {
         </Logo>
         <MenuList>
           <Menu selectedKeys="mail" mode="horizontal">
-            <Menu.Item key="timeline">
-              타임라인
+            <Menu.Item key="subscribe">
+              구독하기
             </Menu.Item>
-            <Menu.Item key="class">
-              클래스
+            <Menu.Item key="product">
+              상품 보기
             </Menu.Item>
           </Menu>
           <Menu mode="horizontal">
@@ -100,12 +100,13 @@ function NavBar() {
             mode="inline"
             theme="light"
             inlineCollapsed={toggleBar}
+            onClick={onMenuClick}
           >
-            <Menu.Item key="timeline">
-              타임라인
+            <Menu.Item key="subscribe">
+              구독하기
             </Menu.Item>
-            <Menu.Item key="class">
-              클래스
+            <Menu.Item key="product">
+              상품 보기
             </Menu.Item>
             <Menu.Item key="login">
               로그인
