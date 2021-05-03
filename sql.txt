@@ -1,3 +1,10 @@
+CREATE TABLE IF NOT EXISTS `customers` (
+  `id` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `name` varchar(10) NOT NULL,
+  `active` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 CREATE TABLE IF NOT EXISTS `products` (
   `productId` int(100) NOT NULL,
   `title` varchar(255) NOT NULL,
@@ -10,4 +17,4 @@ CREATE TABLE IF NOT EXISTS `products` (
   PRIMARY KEY(`productId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `products` VALUES (1234123, '밀리', '자동 급식기', 'image 주소', 'image detail 주소', 99000, 0, 0);
+INSERT INTO `products` VALUES (1234123, '상품명', '상품 상세설명', 'image 주소', 'image detail 주소', 99000, 0, 0);
